@@ -6,6 +6,7 @@ import (
 	"os"
 )
 
+// document represents a document with its title, URL, text, and ID.
 type document struct {
 	Title string `xml:"title"`
 	URL   string `xml:"url"`
@@ -13,6 +14,11 @@ type document struct {
 	Id    int
 }
 
+// LoadDocuments loads documents from the specified path.
+// It reads an XML file, unmarshals it into a slice of documents,
+// and assigns an ID to each document.
+// The path parameter specifies the path to the XML file.
+// It returns the loaded documents and any error encountered.
 func LoadDocuments(path string) ([]document, error) {
 
 	f, err := os.Open(path)
