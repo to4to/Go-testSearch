@@ -13,5 +13,7 @@ A Full Text Search Engine Capable To Search in Provided Document Upto 10M record
  ```
  go mod tidy
  ```
+3. Download The Document
 
+   [Documnet Link](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-abstract1.xml.gz)
  
